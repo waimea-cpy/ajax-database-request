@@ -1,0 +1,83 @@
+/* COLOURS **********************************************************/
+
+:root {
+    --back:        #fff;
+    --back-block:  #ccc;
+    --back-panel:  #eee;
+
+    --text:        #333;
+
+    --accent:      #3bf;
+    --error:       #e44;
+    --success:     #494;
+
+    --border:      #999;
+}
+
+
+/* LAYOUT **********************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 22px;
+}
+
+body {
+    background: var(--back);
+    color: var(--text);
+}
+
+main {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+/* HEADER **********************************************************/
+
+#mainheader {
+    text-align: center;
+}
+
+
+/* PETS **********************************************************/
+
+#pets {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.pet {
+    padding: 0.5rem 1rem;
+    background: var(--back-block);
+    border: 1px solid var(--border);
+}
+
+.pet:hover {
+    background: var(--text);
+    color: var(--back);
+    cursor: pointer;
+}
+
+.pet h3 {
+    margin: 0;
+}
+
+#petdetails {
+    background: var(--back-panel);
+    padding: 1rem;
+    min-width: 20rem;
+    border: 1px solid var(--border);
+}
+
+#petdetails h3 {
+    margin-top: 0;
+}
